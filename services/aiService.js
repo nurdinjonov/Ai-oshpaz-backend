@@ -1,4 +1,9 @@
+const fs = require("fs");
+const path = require("path");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
+
+const FOODS_PATH = path.join(__dirname, "../data/foods.json");
+const GEMINI_MODEL = "gemini-2.5-flash";
 
 function getGeminiKeys() {
   return [
@@ -12,6 +17,64 @@ function getGeminiKeys() {
     .filter(Boolean);
 }
 
+function loadFoods() {
+  try {
+    const raw = fs.readFileSync(FOODS_PATH, "utf-8");
+    return JSON.parse(raw);
+  } catch (error) {
+    console.error("foods.json o'qishda xatolik:", error.message);
+    return [];
+  }
+}
+
+function normalizeText(text = "") {
+  return String(text)
+    .toLowerCase()
+    .replace(/ʻ/g, "'")
+    .replace(/’/g, "'")
+    .replace(/`/g, "'")
+    .replace(/‘/g, "'")
+    .replace(/-/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function searchFoodByName(query = "") {
+  const foods = loadFoods();
+  const normalizedQuery = normalizeText(query);
+
+  if (!normalizedQuery) return null;
+
+  const found = foods.find((food) => {
+    const names = [
+      food.name,
+      food.id,
+      ...(Array.isArray(food.aliases) ? food.aliases : []),
+    ]
+      .filter(Boolean)
+      .map(normalizeText);
+
+    return names.some((name) => {
+      return (
+        name === normalizedQuery ||
+        name.includes(normalizedQuery) ||
+        normalizedQuery.includes(name)
+      );
+    });
+  });
+
+  if (!found) return null;
+
+  return {
+    ...found,
+    is_food: found.is_food !== false,
+    description: found.description || found.recipe || "",
+    ingredients: Array.isArray(found.ingredients) ? found.ingredients : [],
+    steps: Array.isArray(found.steps) ? found.steps : [],
+    source: "json",
+  };
+}
+
 function cleanJsonText(text = "") {
   return text
     .replace(/```json/g, "")
@@ -19,11 +82,13 @@ function cleanJsonText(text = "") {
     .trim();
 }
 
-function safeJsonParse(text) {
+function safeJsonParse(text = "") {
+  const cleaned = cleanJsonText(text);
+
   try {
-    return JSON.parse(cleanJsonText(text));
+    return JSON.parse(cleaned);
   } catch (error) {
-    const match = text.match(/\{[\s\S]*\}/);
+    const match = cleaned.match(/\{[\s\S]*\}/);
     if (match) {
       return JSON.parse(match[0]);
     }
@@ -47,6 +112,7 @@ function shouldTryNextKey(error) {
     message.includes("forbidden") ||
     message.includes("403") ||
     message.includes("401") ||
+    message.includes("404") ||
     message.includes("500") ||
     message.includes("503")
   );
@@ -57,7 +123,7 @@ async function runGeminiWithFallback(task) {
 
   if (!keys.length) {
     throw new Error(
-      "Gemini API key topilmadi. .env ichiga GEMINI_API_KEY1, GEMINI_API_KEY2 yoki GEMINI_API_KEY yozing.",
+      "Gemini API key topilmadi. Render Environment yoki .env ichiga GEMINI_API_KEY1 yozing.",
     );
   }
 
@@ -82,7 +148,7 @@ async function runGeminiWithFallback(task) {
       }
 
       if (i < keys.length - 1) {
-        console.log(`Keyingi Gemini API key sinab ko'rilmoqda...`);
+        console.log("Keyingi Gemini API key sinab ko'rilmoqda...");
       }
     }
   }
@@ -94,7 +160,7 @@ function getGeminiModel(apiKey) {
   const genAI = new GoogleGenerativeAI(apiKey);
 
   return genAI.getGenerativeModel({
-    model: "gemini-1.5-flash",
+    model: GEMINI_MODEL,
   });
 }
 
@@ -225,6 +291,19 @@ Agar ovqat bo'lmasa:
 }
 
 async function getDetailedRecipe(foodName, ingredients = []) {
+  const foodFromJson = searchFoodByName(foodName);
+
+  if (foodFromJson && foodFromJson.steps && foodFromJson.steps.length > 0) {
+    return {
+      is_food: true,
+      name: foodFromJson.name,
+      description: foodFromJson.description || "",
+      ingredients: foodFromJson.ingredients || [],
+      steps: foodFromJson.steps || [],
+      source: "json",
+    };
+  }
+
   return runGeminiWithFallback(async (apiKey) => {
     const model = getGeminiModel(apiKey);
 
@@ -274,11 +353,11 @@ JSON formati:
 }
 
 module.exports = {
+  searchFoodByName,
   analyzeFoodImage,
   searchFoodWithAI,
   getDetailedRecipe,
 
-  // Old controller nomlari bilan ham ishlashi uchun aliaslar
   getDetailedRecipeFromAI: getDetailedRecipe,
   searchFoodByNameWithAI: searchFoodWithAI,
 };
