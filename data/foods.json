@@ -1,0 +1,454 @@
+[
+  {
+    "id": "osh",
+    "name": "Osh",
+    "aliases": ["palov", "plov", "o'zbek osh", "uzbek osh", "pilaf"],
+    "is_food": true,
+    "image": "",
+    "description": "Osh guruch, go'sht, sabzi va piyozdan tayyorlanadigan mashhur o'zbek milliy taomidir.",
+    "ingredients": [
+      "Guruch",
+      "Go'sht",
+      "Sabzi",
+      "Piyoz",
+      "O'simlik yog'i",
+      "Zira",
+      "No'xat",
+      "Mayiz",
+      "Tuz"
+    ],
+    "steps": [
+      "Go'shtni o'rtacha bo'laklarga bo'ling.",
+      "Qozonga yog' solib qizdiring va go'shtni qovuring.",
+      "Piyozni solib tillarang bo'lguncha qovuring.",
+      "Sabzini somoncha qilib to'g'rab qozonga soling.",
+      "Zira, tuz, no'xat va kerak bo'lsa mayiz qo'shing.",
+      "Ustidan suv quyib zirvakni past olovda pishiring.",
+      "Guruchni yuvib, qozonga tekis qilib soling.",
+      "Guruch suvini tortgach, oshni damga qo'ying.",
+      "Tayyor oshni aralashtirib, laganga suzib torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "chuchvara",
+    "name": "Chuchvara",
+    "aliases": ["tushbera", "pelmen", "uzbek dumplings"],
+    "is_food": true,
+    "image": "",
+    "description": "Chuchvara yupqa xamir ichiga qiyma solib tugiladigan va sho'rvada pishiriladigan xamirli taomdir.",
+    "ingredients": [
+      "Un",
+      "Tuxum",
+      "Suv",
+      "Go'shtli qiyma",
+      "Piyoz",
+      "Tuz",
+      "Qora murch",
+      "Ko'kat"
+    ],
+    "steps": [
+      "Un, tuxum, suv va tuzdan qattiqroq xamir qoring.",
+      "Xamirni 20-30 daqiqa tindiring.",
+      "Go'shtli qiymaga piyoz, tuz va murch qo'shib aralashtiring.",
+      "Xamirni yupqa qilib yoying va kichik kvadratlarga kesing.",
+      "Har bir bo'lak ichiga qiyma solib chuchvara shaklida tuging.",
+      "Qozonda suv yoki sho'rva qaynatib oling.",
+      "Chuchvaralarni qaynab turgan suvga solib pishiring.",
+      "Tayyor bo'lgach ko'kat va qatiq bilan dasturxonga torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "somsa",
+    "name": "Somsa",
+    "aliases": ["samsa", "samosa", "go'shtli somsa"],
+    "is_food": true,
+    "image": "",
+    "description": "Somsa qatlamali yoki oddiy xamir ichiga go'sht, piyoz va ziravorlar solib pishiriladigan taomdir.",
+    "ingredients": [
+      "Un",
+      "Suv",
+      "Sariyog'",
+      "Go'sht",
+      "Piyoz",
+      "Tuz",
+      "Murch",
+      "Sedana"
+    ],
+    "steps": [
+      "Un, suv va tuzdan xamir qoring.",
+      "Xamirni yoyib, sariyog' surtib rulet qilib o'rang.",
+      "Xamirni bo'laklarga bo'lib, biroz tindiring.",
+      "Go'sht va piyozni mayda to'g'rang.",
+      "Ichlikka tuz, murch va ziravorlar qo'shing.",
+      "Xamir bo'laklarini yoyib, ichiga masalliq soling.",
+      "Somsani uchburchak yoki dumaloq shaklda yoping.",
+      "Ustiga tuxum surtib, sedana seping.",
+      "Duxovka yoki tandirda qizarguncha pishiring."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "shorva",
+    "name": "Sho'rva",
+    "aliases": ["shurva", "sho'rbo", "qaynatma sho'rva", "shorva"],
+    "is_food": true,
+    "image": "",
+    "description": "Sho'rva go'sht va sabzavotlar bilan qaynatib tayyorlanadigan quvvatli suyuq milliy taomdir.",
+    "ingredients": [
+      "Qo'y go'shti",
+      "Kartoshka",
+      "Sabzi",
+      "Piyoz",
+      "Bulg'or qalampiri",
+      "Pomidor",
+      "Ko'kat",
+      "Tuz",
+      "Ziravorlar"
+    ],
+    "steps": [
+      "Go'shtni yuvib, qozonga soling.",
+      "Ustidan sovuq suv quyib qaynatishga qo'ying.",
+      "Qaynaganda ko'piklarini olib tashlang.",
+      "Piyoz, sabzi va pomidorni qo'shing.",
+      "Go'sht yumshaguncha past olovda qaynatib pishiring.",
+      "Kartoshka va bulg'or qalampirini soling.",
+      "Tuz va ziravorlarni qo'shing.",
+      "Sabzavotlar pishgach, ko'kat sepib dasturxonga torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "manti",
+    "name": "Manti",
+    "aliases": ["manty", "go'shtli manti", "qovoqli manti"],
+    "is_food": true,
+    "image": "",
+    "description": "Manti bug'da pishiriladigan, ichiga go'sht, piyoz yoki qovoq solinadigan xamirli taomdir.",
+    "ingredients": [
+      "Un",
+      "Tuxum",
+      "Suv",
+      "Go'sht",
+      "Piyoz",
+      "Dumba yog'i",
+      "Zira",
+      "Tuz",
+      "Murch"
+    ],
+    "steps": [
+      "Un, tuxum, suv va tuzdan xamir qoring.",
+      "Xamirni tindirib qo'ying.",
+      "Go'sht, piyoz va dumba yog'ini mayda to'g'rang.",
+      "Ichlikka zira, tuz va murch qo'shing.",
+      "Xamirni yupqa yoyib kvadrat shaklda kesing.",
+      "Har bir bo'lakka ichlik solib manti shaklida yoping.",
+      "Mantilarni yog'langan patnisga tering.",
+      "Mantiqozonda 35-45 daqiqa bug'da pishiring.",
+      "Qatiq yoki qayla bilan torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "shashlik",
+    "name": "Shashlik",
+    "aliases": ["kabob", "kebab", "six kabob", "go'sht kabob"],
+    "is_food": true,
+    "image": "",
+    "description": "Shashlik marinadlangan go'sht bo'laklarini sixga terib, cho'g'da pishirish orqali tayyorlanadigan taomdir.",
+    "ingredients": [
+      "Qo'y yoki mol go'shti",
+      "Dumba",
+      "Piyoz",
+      "Koriandr",
+      "Zira",
+      "Uksus",
+      "Tuz",
+      "Murch"
+    ],
+    "steps": [
+      "Go'shtni bir xil bo'laklarga bo'ling.",
+      "Piyozni to'g'rab, go'shtga qo'shing.",
+      "Tuz, murch, zira, koriandr va uksus qo'shib aralashtiring.",
+      "Go'shtni kamida 2-3 soat marinadlang.",
+      "Go'sht bo'laklarini sixga tering.",
+      "Cho'g'ni tayyorlab, shashlikni aylantirib pishiring.",
+      "Pishgan shashlikni piyoz va ko'kat bilan torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "lagmon",
+    "name": "Lag'mon",
+    "aliases": ["lagmon", "lagman", "cho'zma lag'mon"],
+    "is_food": true,
+    "image": "",
+    "description": "Lag'mon cho'zma xamir, go'sht va sabzavotli qayladan tayyorlanadigan to'yimli taomdir.",
+    "ingredients": [
+      "Un",
+      "Tuxum",
+      "Suv",
+      "Go'sht",
+      "Piyoz",
+      "Sabzi",
+      "Qalampir",
+      "Sarimsoq",
+      "Pomidor",
+      "Ko'kat"
+    ],
+    "steps": [
+      "Un, suv, tuxum va tuzdan xamir qoring.",
+      "Xamirni tindirib, uzun ugra shaklida cho'zing.",
+      "Go'shtni mayda bo'laklarga bo'lib qovuring.",
+      "Piyoz, sabzi, qalampir va pomidorni qo'shib qovuring.",
+      "Sarimsoq va ziravorlar qo'shing.",
+      "Qayla ustiga suv quyib biroz qaynatib pishiring.",
+      "Lag'mon xamirini alohida suvda qaynatib oling.",
+      "Idishga xamir solib, ustidan qayla quying.",
+      "Ko'kat bilan bezab torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "qozon-kabob",
+    "name": "Qozon kabob",
+    "aliases": ["qozonkabob", "kazan kabob", "qozon kebab"],
+    "is_food": true,
+    "image": "",
+    "description": "Qozon kabob qozonda go'sht va kartoshkani qovurib-dimlab tayyorlanadigan bayramona taomdir.",
+    "ingredients": [
+      "Qo'y go'shti",
+      "Kartoshka",
+      "O'simlik yog'i",
+      "Zira",
+      "Kashnich urug'i",
+      "Tuz",
+      "Murch"
+    ],
+    "steps": [
+      "Go'shtni yirik bo'laklarga bo'ling.",
+      "Kartoshkani archib, butun yoki yirik holda tayyorlang.",
+      "Qozonda yog'ni qizdiring.",
+      "Kartoshkani qizartirib olib qo'ying.",
+      "Go'shtni qozonga solib qovuring.",
+      "Tuz, zira, murch va kashnich urug'i qo'shing.",
+      "Kartoshkani qayta qozonga soling.",
+      "Qopqog'ini yopib past olovda dimlang.",
+      "Tayyor bo'lgach ko'kat bilan torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "norin",
+    "name": "Norin",
+    "aliases": ["naryn", "go'shtli norin", "qazi norin"],
+    "is_food": true,
+    "image": "",
+    "description": "Norin mayda to'g'ralgan xamir va go'sht aralashmasidan tayyorlanadigan to'yimli milliy taomdir.",
+    "ingredients": ["Un", "Go'sht", "Qazi", "Piyoz", "Tuz", "Murch", "Zira"],
+    "steps": [
+      "Un, suv va tuzdan qattiq xamir qoring.",
+      "Xamirni yupqa yoyib, qaynab turgan suvda pishiring.",
+      "Pishgan xamirlarni sovitib, mayda somoncha qilib to'g'rang.",
+      "Go'sht va qazini alohida qaynatib pishiring.",
+      "Pishgan go'shtni mayda to'g'rang.",
+      "Xamir, go'sht va ziravorlarni aralashtiring.",
+      "Ustiga piyoz va murch sepib torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "dimlama",
+    "name": "Dimlama",
+    "aliases": ["dimlama", "domlama", "basma"],
+    "is_food": true,
+    "image": "",
+    "description": "Dimlama go'sht va sabzavotlarni qozonda o'z suvida sekin dimlab pishirish orqali tayyorlanadi.",
+    "ingredients": [
+      "Go'sht",
+      "Kartoshka",
+      "Sabzi",
+      "Karam",
+      "Pomidor",
+      "Piyoz",
+      "Bulg'or qalampiri",
+      "Ziravorlar",
+      "Tuz"
+    ],
+    "steps": [
+      "Go'shtni qozon tagiga joylashtiring.",
+      "Ustidan piyoz, sabzi, kartoshka, pomidor va karamni qatlam qilib tering.",
+      "Har bir qatlamga ozroq tuz va ziravor seping.",
+      "Qozon qopqog'ini mahkam yoping.",
+      "Past olovda sabzavotlar o'z suvida pishguncha dimlang.",
+      "Pishirish vaqtida ko'p aralashtirmang.",
+      "Tayyor dimlamani issiq holda torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "mastava",
+    "name": "Mastava",
+    "aliases": ["guruchli sho'rva", "mastoba", "mastava sho'rva"],
+    "is_food": true,
+    "image": "",
+    "description": "Mastava guruch, go'sht va sabzavotlardan tayyorlanadigan suyuq va to'yimli ovqatdir.",
+    "ingredients": [
+      "Guruch",
+      "Go'sht",
+      "Kartoshka",
+      "Sabzi",
+      "Piyoz",
+      "Pomidor",
+      "Ko'kat",
+      "Tuz",
+      "Ziravorlar"
+    ],
+    "steps": [
+      "Go'shtni mayda bo'laklarga bo'lib qovuring.",
+      "Piyoz, sabzi va pomidor qo'shib qovuring.",
+      "Kartoshkani kubik shaklida to'g'rab soling.",
+      "Ustidan suv quyib qaynatib oling.",
+      "Guruchni yuvib qozonga soling.",
+      "Tuz va ziravorlar qo'shing.",
+      "Guruch va kartoshka pishguncha qaynatib pishiring.",
+      "Ko'kat sepib, qatiq bilan torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "xonim",
+    "name": "Xonim",
+    "aliases": ["khanum", "xonim manti", "urama xonim"],
+    "is_food": true,
+    "image": "",
+    "description": "Xonim bug'da pishiriladigan, ichiga kartoshka, piyoz yoki qiyma solinadigan xamirli taomdir.",
+    "ingredients": [
+      "Un",
+      "Suv",
+      "Tuz",
+      "Kartoshka",
+      "Piyoz",
+      "Qiyma",
+      "Ziravorlar",
+      "Yog'"
+    ],
+    "steps": [
+      "Un, suv va tuzdan xamir qoring.",
+      "Xamirni 20 daqiqa tindiring.",
+      "Kartoshka va piyozni mayda to'g'rang yoki qiymaga aralashtiring.",
+      "Ichlikka tuz va ziravorlar qo'shing.",
+      "Xamirni yupqa qilib yoying.",
+      "Ichlikni xamir ustiga tekis yoyib chiqing.",
+      "Xamirni rulet shaklida o'rang.",
+      "Bug'da 35-40 daqiqa pishiring.",
+      "Tayyor xonimni bo'laklarga kesib, qayla bilan torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "dolma",
+    "name": "Do'lma",
+    "aliases": ["dolma", "tolma", "uzum bargi do'lma"],
+    "is_food": true,
+    "image": "",
+    "description": "Do'lma uzum bargi yoki sabzavot ichiga qiyma va guruch solib tayyorlanadigan taomdir.",
+    "ingredients": [
+      "Uzum bargi",
+      "Qiyma",
+      "Guruch",
+      "Piyoz",
+      "Ko'kat",
+      "Tuz",
+      "Ziravorlar"
+    ],
+    "steps": [
+      "Guruchni yuvib, qiymaga qo'shing.",
+      "Piyoz va ko'katni mayda to'g'rab aralashtiring.",
+      "Tuz va ziravorlar qo'shing.",
+      "Uzum barglarini yumshatib tayyorlang.",
+      "Har bir barg ichiga masalliq solib o'rang.",
+      "Do'lmalarni qozonga zich qilib tering.",
+      "Ozroq suv yoki sho'rva quyib past olovda pishiring.",
+      "Tayyor do'lmani qatiq bilan torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "tuxum-barak",
+    "name": "Tuxum barak",
+    "aliases": ["tuxumbarak", "xorazm tuxum barak", "barak"],
+    "is_food": true,
+    "image": "",
+    "description": "Tuxum barak Xorazm oshxonasiga mansub, ichiga tuxumli aralashma solinadigan xamir taomidir.",
+    "ingredients": ["Un", "Tuxum", "Sut", "Yog'", "Tuz", "Suv"],
+    "steps": [
+      "Un, suv va tuzdan xamir qoring.",
+      "Xamirni tindirib, yupqa qilib yoying.",
+      "Xamirni to'rtburchak bo'laklarga kesing.",
+      "Tuxum, sut, yog' va tuzni aralashtirib ichlik tayyorlang.",
+      "Xamir bo'laklarining chetlarini yopib, ichiga tuxumli aralashma quying.",
+      "Og'zini mahkam yoping.",
+      "Qaynab turgan suvda ehtiyotkorlik bilan pishiring.",
+      "Tayyor bo'lgach sariyog' bilan torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "tandir-gosht",
+    "name": "Tandir go'sht",
+    "aliases": ["tandir gosht", "tandir kabob", "tandir go'shti"],
+    "is_food": true,
+    "image": "",
+    "description": "Tandir go'sht tandirda sekin pishiriladigan yumshoq va xushbo'y go'shtli taomdir.",
+    "ingredients": [
+      "Qo'y go'shti",
+      "Zira",
+      "Kashnich",
+      "Tuz",
+      "Murch",
+      "Dumba yog'i"
+    ],
+    "steps": [
+      "Go'shtni yirik bo'laklarga bo'ling.",
+      "Tuz, zira, kashnich va murch bilan marinadlang.",
+      "Go'shtni biroz tindirib qo'ying.",
+      "Tandirni yaxshilab qizdiring.",
+      "Go'shtni sixga yoki maxsus ilgakka joylang.",
+      "Tandirda sekin pishiring.",
+      "Go'sht yumshab, usti qizarganda oling.",
+      "Piyoz va ko'kat bilan torting."
+    ],
+    "source": "json"
+  },
+  {
+    "id": "kuksi",
+    "name": "Kuksi",
+    "aliases": ["kuk-si", "kuksi", "koreyscha kuksi"],
+    "is_food": true,
+    "image": "",
+    "description": "Kuksi ugra, sabzavot, go'sht va maxsus ziravorlar bilan tayyorlanadigan sovuq yoki issiq taomdir.",
+    "ingredients": [
+      "Ugra",
+      "Go'sht",
+      "Bodring",
+      "Karam",
+      "Tuxum",
+      "Ko'kat",
+      "Ziravorlar",
+      "Soya sousi"
+    ],
+    "steps": [
+      "Ugrani alohida qaynatib, sovuq suvda chaying.",
+      "Go'shtni mayda to'g'rab qovuring yoki qaynatib tayyorlang.",
+      "Bodring va karamni somoncha qilib to'g'rang.",
+      "Tuxumdan yupqa quymoq pishirib, kesib oling.",
+      "Maxsus kuksi suvi yoki qaylasini tayyorlang.",
+      "Idishga ugra, sabzavot, go'sht va tuxumni joylang.",
+      "Ustidan kuksi suvi yoki qayla quying.",
+      "Ko'kat va ziravorlar bilan torting."
+    ],
+    "source": "json"
+  }
+]
